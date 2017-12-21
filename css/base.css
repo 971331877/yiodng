@@ -1,0 +1,25 @@
+/*
+* @Author: pzz
+* @Date:   2017-12-01 19:54:43
+* @Last Modified by:   pzz
+* @Last Modified time: 2017-12-14 00:15:17
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑","宋体",sans-serif;
+	list-style: none;
+	border: none;
+}
+/* body{
+	background: #fff;
+} */
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal
+}
