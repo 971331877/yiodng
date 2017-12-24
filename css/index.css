@@ -2,14 +2,19 @@
 * @Author: pzz
 * @Date:   2017-12-20 21:01:06
 * @Last Modified by:   pzz
-* @Last Modified time: 2017-12-21 01:06:58
+* @Last Modified time: 2017-12-23 02:45:43
 */
 @import url(base.css);
+body{
+	background: #fff;
+}
 #tophead{
 	width: 100%;
 	height: 564px;
 	background-image: url('../img/20171206192020486IC5.jpg'); background-repeat: no-repeat;background-position: center -50px;
+/* 	background: #FFFFFF; */
 }
+
 .toubu{
 	width: 100%;
 	height: 30px;
@@ -415,3 +420,824 @@
     color: #ffffff!important;
     background: #3eb4fa;
 }
+.yh{
+	width: 1200px;
+	height: 170px;
+	background: #fff;
+	margin: 20px auto 0;
+}
+.yh1{
+	width: 235px;
+	height: 170px;
+	background: yellowgreen;
+	float: left;
+}
+.yh2{
+	width: 960px;
+	height: 170px;
+	background: #fff;
+	float: right;
+	position: relative;
+}
+.yh22{
+	width: 234px;
+	height: 170px;
+	background: #F4F4F4;
+	margin: 0 7px 0 0;
+	float: left;
+	position: relative;
+}
+.yh222{
+	margin: 0;
+}
+.yh224{
+	font-size: 17px;
+	margin-top: 13px;
+	margin-left: 10px;
+	color: #333;
+}
+.yh223{
+	font-size: 14px;
+	margin-top: 6px;
+	margin-left: 10px;
+	color: #808080;
+}
+.yh225{
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #F4F4F4;
+
+}
+.anniu-right{
+	position: absolute;
+    right: 0px;
+    top: 70px;
+    height: 35px;
+    width: 28px;
+    background: url(../img/next2.png) no-repeat;
+    cursor: pointer;
+    z-index: 10;
+    float: right;
+}
+.anniu-left{
+	position: absolute;
+    left: 0px;
+    top: 70px;
+    height: 35px;
+    width: 28px;
+    background: url(../img/prev2.png) no-repeat;
+    cursor: pointer;
+    z-index: 10;
+    float: left;
+}
+.xyh{
+	width: 1200px;
+	height: 535px;
+	background: #fff;
+	margin: 0 auto;
+}
+.xyh-top{
+	width: 1200px;
+	height: 67px;
+	background: #fff;
+}
+.xyh-top1{
+	float: left;
+    display: block;
+    padding-top: 32px;
+    font: 22px/22px "microsoft yahei";
+    color: #222222;
+}
+.list{
+	float: right;
+    padding-right: 10px;
+    font: 14px/14px "microsoft yahei";
+    padding-top: 38px;
+    color: #333;
+}
+.xyh-top a:nth-of-type(6){
+	color: #E30077;
+}
+.xyh-top a:hover{
+	color:  #3eb4fa;
+}
+.xyh-bot{
+	width: 1198px;
+    height: 466px;
+    margin: 0 auto;
+    border: 1px solid #e8e8e8;
+}
+.col-1{
+	float: left;
+    width: 475px;
+    height: 466px;
+    border-right: 1px solid #e8e8e8;
+}
+.col-1-box{
+width: 475px;
+    height: 325px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.col-1-box1{
+	width: 475px;
+    height: 140px;
+    background: #fff;
+    position: relative;
+}
+.col-1-box11{
+	    float: left;
+    width: 245px;
+    padding: 50px 0 0 25px;
+    font: 18px/18px "microsoft yahei";
+    color: #222222;
+}
+.col-1-box12{
+	float: left;
+    width: 245px;
+    padding: 8px 0 0 25px;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+}
+.col-1-box13{
+	display: block;
+    width: 180px;
+    height: 140px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.col-2{
+	float: left;
+    width: 240px;
+    height: 466px;
+    border-right: 1px solid #e8e8e8;
+}
+.col-22{
+	width: 240px;
+    height: 232px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+.col-23{
+	width: 210px;
+    padding: 30px 15px 0;
+    font: 18px/20px "microsoft yahei";
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col-24{
+	width: 210px;
+    padding: 10px 15px 0;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col-25{
+	display: block;
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.col-box2{
+	width: 240px;
+    height: 232px;
+   /*  border-bottom: 1px solid #e8e8e8; */
+    position: relative;
+}
+.col-26{
+	    width: 210px;
+    padding: 30px 15px 0;
+    font: 18px/20px "microsoft yahei";
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col-27{
+	width: 210px;
+    padding: 10px 15px 0;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col-28{
+	display: block;
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.col-box3{
+	float: left;
+    width: 240px;
+    height: 466px;
+    border-right: 1px solid #e8e8e8;
+    position: relative;
+}
+.col-box3 h4{
+	width: 210px;
+    padding: 24px 15px 0;
+    font: 22px/28px "microsoft yahei";
+    color: #222222;
+}
+.col-box3 p{
+	width: 210px;
+    padding: 10px 15px 0;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+}
+.col-box3 img{
+	display: block;
+    width: 240px;
+    height: 280px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.clo-x{
+	border: 0;
+}
+.sj{
+	width: 475px;
+    height: 360px;
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+.sj h4{
+	float: left;
+    width: 200px;
+    padding: 25px 0 0 30px;
+    font: 100 22px/34px "microsoft yahei";
+    color: #222222;
+    font-weight: 500;
+}
+.sj p{
+	float: left;
+    width: 220px;
+    padding: 13px 0 0 30px;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+}
+.sj span{
+	display: block;
+    float: left;
+    width: 220px;
+    padding: 40px 0 0 30px;
+    font: 24px/24px "microsoft yahei";
+    color: #e40077;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sj img{
+	display: block;
+    width: 235px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.sj1{
+	width: 475px;
+    height: 105px;
+}
+.sj1 img{
+	display: block;
+    float: left;
+    width: 95px;
+    height: 50px;
+    margin: 1px 0;
+}
+.zn{
+	width: 475px;
+    height: 115px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e8e8e8;
+    background: #ffffff;
+    position: relative;
+    transition: 0.2s;
+}
+.zn:hover{
+	background: #F9F9F9;
+}
+.zn h4{
+	float: left;
+    width: 260px;
+    padding: 25px 0 0 40px;
+    font: 100 20px/20px "microsoft yahei";
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+.zn p{
+	float: left;
+    width: 260px;
+    padding: 15px 0 0 40px;
+    font: 14px/14px "microsoft yahei";
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.zn span{
+	display: block;
+    width: 260px;
+    padding: 10px 0 0 40px;
+    font: 16px/16px "microsoft yahei";
+    color: #e40077;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.zn img{
+	display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+}
+.zn:last-child{
+	border: none;
+}
+.mg{
+	width: 237px;
+    height: 466px;
+    border-right: 1px solid #e8e8e8;
+    background: #ffffff;
+    overflow: hidden;
+    float: left;
+}
+.mg1{
+	width: 232px;
+    height: 116px;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 5px solid #ffffff;
+    cursor: pointer;
+}
+.mg1 h4{
+	padding: 28px 0 0 23px;
+    font: 20px/20px "microsoft yahei";
+    color: #222222;
+}
+.mg1 p{
+	padding: 18px 0 0 23px;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+}
+.mg1:hover{
+	border-left: 5px solid #ef2e72;
+    background: #f6f7f7;
+}
+.yl{
+    width: 237px;
+    height: 466px;
+    border-right: 1px solid #e8e8e8;
+    float: left; 
+
+}
+.yl1{
+	width: 217px;
+    height: 446px;
+    padding: 20px 10px 0;
+    margin: 0 auto;
+    background: #ffffff;
+ 
+}
+.ylx{
+	width: 220px;
+	height: 60px;
+	/* background: red; */
+}
+.ylx1{
+	font-size: 20px;
+	float: left;
+	color: #333;
+	line-height: 60px;
+}
+.ylx2{
+	width: 90px;
+	height: 25px;
+	/* background: yellow; */
+	float: right;
+	margin-top: 20px;
+}
+.yl6{
+	width: 217px;
+	height: 382px;
+	/* background: red; */
+	margin: 0 auto;
+	margin-top: 0px;
+
+}
+.yl161{
+	width: 217px;
+    margin: 0 auto 8px;
+    height: 70px;
+   /*  background: yellow; */
+}
+.yl162{
+	width: 70px;
+    height: 70px;
+    float: left;
+}
+.dabangzi{
+	float: left;
+    width: 147px;
+    height: 54px;
+}
+.dabangzi h5{
+	float: left;
+    width: 137px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font: 16px/16px "microsoft yahei";
+    color: #333333;
+}
+.dabangzi p{
+	float: left;
+    width: 137px;
+    padding-top: 9px;
+    padding-left: 10px;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+}
+.rg{
+	width: 722px;
+    height: auto;
+    overflow: hidden;
+}
+.rg1{
+	width: 710px;
+    height: 210px;
+    margin: 6px auto;
+    overflow: hidden
+}
+.rg2{
+	width: 710px;
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+    border: 0px;
+}
+.jd{
+	float: left;
+    /* width: 56px; */
+    padding: 5px;
+    margin-left: -28px!important;
+    border-radius: 10px;
+    background: #bbbbb9;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 2;
+}
+.jd1{
+	padding: 0px;
+    margin: 0;
+    font-size: 12px;
+}
+.jd2{
+
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border: 0px;
+    border-radius: 5px;
+    background: #5d5d5c;
+    cursor: pointer;
+}
+.rgbt{
+	width: 722px;
+    height: auto;
+    margin: 0 auto;
+    border-top: 1px solid #e8e8e8;
+}
+.rgbt1{
+	width: 722px;
+	height: 60px;
+	/* background: red; */
+}
+.rgbt2{
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+	color: #333;
+	margin-left: 20px;
+}
+.rgbt3{
+	width: 90px;
+	height: 25px;
+	/* background: yellow; */
+	float: right;
+	margin: 20px;
+}
+.rbgt4{
+	font-size: 14px;
+	color: #C0C0C0;
+	float: left;
+	line-height: 25px;
+}
+.rgbt5{
+	width: 20px;
+	height: 20px;
+/* 	background: yellowgreen; */
+	display: block;
+	float: right;
+	margin-top: 2px;
+}
+.rgbt6{
+	width: 20px;
+	height: 20px;
+/* 	background: yellowgreen; */
+	display: block;
+	float: right;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.find{
+	width: 722px;
+    height: 146px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.find1{
+	float: left;
+    width: 120px;
+    height: 144px;
+    margin-left: 20px;
+}
+.find2{
+	float: left;
+    width: 120px;
+    padding-top: 5px;
+    font: 14px/14px "microsoft yahei";
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.find2 a{
+	color: #333;
+}
+.tese{
+	width: 1200px;
+    margin: 0 auto;
+}
+.tese h2{
+	padding: 40px 0 30px;
+    margin: 0 auto;
+    font: 22px/22px "microsoft yahei";
+    color: #222222;
+}
+.ts1{
+	float: left;
+    width: 299px;
+    height: 80px;
+    padding-bottom: 40px;
+}
+.ts2{
+	float: left;
+    width: 80px;
+    height: 80px;
+}
+.ts3{
+	float: left;
+    width: 199px;
+    padding-left: 20px;
+}
+.ts4{
+	width: 100%;
+    padding-top: 15px;
+    font: 18px/18px "microsoft yahei";
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ts5{
+	width: 100%;
+    padding-top: 11px;
+    font: 14px/14px "microsoft yahei";
+    color: #808080;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gg{
+	width: 1198px;
+    height: 38px;
+    margin: 10px auto 0;
+    border: 1px solid #dfdfdf;
+    font-size: 14px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.gg1{
+	display: block;
+    float: left;
+    width: 50px;
+    padding-left: 50px;
+    background: url(../img/indexgg.gif) no-repeat 20px center;
+    color: #666;
+}
+.gg2{
+	line-height: 38px;
+	color:  #3EB4FA;
+	float: left;
+}
+.gg3{
+	margin-left: 100px;
+}
+.gg4{
+	float: left;
+	color: #3EB4FA;
+	line-height: 38px;
+	margin-left: 150px;
+}
+.gz{
+	width: 1198px;
+    margin: 10px auto 0;
+    padding-bottom: 18px;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+/*     height: 80px; */
+}
+.gz1{
+	margin: 0 auto;
+    padding-top: 6px;
+}
+.gz2{
+	float: right;
+    display: block;
+    font: 12px/12px "microsoft yahei";
+    padding: 0 15px 0 0;
+    color: #666666;
+}
+.gz3{
+	float: left;
+    display: block;
+    padding: 7px 20px 0 23px;
+}
+.gz4{
+	float: left;
+    width: 1000px;
+    margin: 0;
+}
+.gz5{
+	float: left;
+    width: 470px;
+    padding: 0 10px 0 20px;
+    font: 14px/28px "microsoft yahei";
+}
+.gz6{
+	float: left;
+    width: 330px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gz7{
+	float: left;
+    width: 120px;
+    padding-left: 10px;
+    color: #d5cccc;
+    background: none;
+}
+.lj{
+	 width: 1163px;
+	 height: auto;
+    margin: 10px auto 0;
+    border: 1px solid #dfdfdf;
+    padding: 20px 0 20px 35px;
+    overflow: hidden;
+}
+.lj1{
+	float: left;
+    width: 20%;
+
+}
+.lj2{
+	font: bold 15px/27px "微软雅黑";
+    color: #666;
+    margin: 0;
+    height: 27px;
+
+}
+.lj3{
+	width: 100%;
+	height: auto;
+}
+.lj4{
+	display: block;
+    font-size: 15px;
+    line-height: 180%;
+    text-decoration: none;
+    color: #333;
+}
+.lj3 a:hover{
+	color:  #3EB4FA;
+}
+.footer{
+	width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.foot{
+	float: left;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.foot-top div{
+	line-height: 33px;
+}
+.foot1{
+	text-decoration: none;
+    cursor: pointer;
+    color: #666;
+}
+.foot2{
+	padding-top: 20px;
+}
+.foot2 div{
+	line-height: 33px;
+	
+}
+.foot2 a{
+	color: #666;
+}
+.foot2 a:hover{
+	color:  #3EB4FA;
+}
+.foot3{
+	line-height: 18px;
+    padding: 20px 0 0 0;
+}
+.foot4{
+	padding-top: 10px;
+	overflow: hidden;
+	
+}
+.foot4 div{
+	line-height: 33px;
+	
+}
+.foot5{
+	padding: 0;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+.foot6{
+	/* padding: 0 0 0 20px; */
+    /* text-align: left; */
+    /* padding: 0; */
+	width: 160px;
+	height: 37px;
+	/* background: red; */
+	float: left;  
+}
+.foot7{
+	width:21px;
+	height: 25px;
+	float: left;
+	margin-top: 14px;
+	margin-left: 20px;
+}
+.foot8{
+	font-size: 12px;
+	color: #333;
+	float: left;
+	line-height: 55px;
+	margin-left: 6px;
+}
+.foot8:hover{
+	color:  #3EB4FA;
+	text-decoration:underline;
+}
+
+
+
+
