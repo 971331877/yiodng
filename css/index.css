@@ -226,6 +226,15 @@ body{
 	height: 398px;
 	position: relative;
 	float: left;
+
+}
+.bannerv .active{
+	opacity: 1;
+	z-index: 1;
+}
+.bannerv li:first-child{
+	opacity: 1;
+	/*z-index: 99;*/
 }
 .bannerv li{
 	width: 100%;
@@ -233,6 +242,8 @@ body{
 	position: absolute;
 	left: 0;
 	top: 0;
+	opacity: 0;
+	transition: 1s;
 }
 .bannerv li a{
 	width: 100%;
@@ -264,6 +275,8 @@ body{
 	margin-bottom: auto;
 	left: 0;
 	opacity: 0;
+	z-index: 999;
+	cursor: pointer;
 }
 .bnvy{
 	width: 34px;
@@ -280,6 +293,8 @@ body{
 	margin-bottom: auto;
 	right: 0;
 	opacity: 0;
+	z-index: 999;
+	cursor: pointer;
 }
 .bannerv:hover .bnvz{
 	opacity: 1;
@@ -296,21 +311,24 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	bottom: 16px;
+	z-index: 999;
 }
 .bannerv main div{
 	width: 10px;
 	height: 10px;
 	float: left;
 	border-radius: 50%;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.4);
 	margin-right: 10px;
+	cursor: pointer;
+}
+.banner .active{
+	background:#E30077;!important;
 }
 .bannerv main div:last-child{
     margin-right: 0px;
 }
-.bannerv main div:first-child{
-	background: rgba(0, 0, 0, 1.0);
-}
+
 .banys{
 	width: 258px;
 	height: 148px;
