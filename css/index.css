@@ -14,7 +14,218 @@ body{
 	background-image: url('../img/20171206192020486IC5.jpg'); background-repeat: no-repeat;background-position: center -50px;
 /* 	background: #FFFFFF; */
 }
+.dh{
+	width: 100%;
+	height: 61px;
+	margin: 0 auto;
+	border-bottom: 1px solid #24a7f9;
+	/*position: fixed;*/
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1000;
+	background: #ffffff;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	position: fixed;
+	display: none;
+}
+.dh-box{
+	width: 1200px;
+	height: 61px;
+	margin: 0 auto
+}
+.dh-left{
+	float: left;
+	width: 230px;
+	height: auto;
+	margin: 9px 0 0 0;
+}
 
+.dh-zj{
+	float: left;
+	height: 50px;
+	padding-top: 11px;
+	padding-left: 45px;
+}
+.dh-zj li{
+	float: left;
+	height: 50px;
+	padding: 0 17px
+}
+.dh-zj li a{
+	display: block;
+	height: 33px;
+	padding: 0 7px;
+	font: 16px/33px "microsoft yahei";
+	color: #222222;
+	background: #ffffff;
+	border-radius: 5px;
+}
+.dh-zj1{
+	display: block;
+	height: 33px;
+	padding: 0 7px;
+	font: 16px/33px "microsoft yahei";
+	color: #222222;
+	background: #ffffff;
+	border-radius: 5px;
+}
+.dh-zj1 .active{
+	color: #ffffff;
+	background: #2ba7ff;
+}
+.head2_search {
+	float: right;
+	width: 285px;
+	padding-top: 11px;
+	margin-right: 50px;
+}
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+.head2_search .searchbar {
+	border: 1px solid #3eb4fa;
+	padding-top: 0px;
+	border: 1px solid transparent;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box !important;
+	background: url(../img/searchBg_t.jpg) no-repeat left center;
+}
+.searchbar .form-control {
+	outline: none;
+	box-shadow: inset 0 0 0 rgba(0,0,0,0);
+	z-index: 0;
+	border: 0;
+	color: #666666;
+	height: 32px;
+	margin-top: 0px;
+	vertical-align: middle;
+	padding: 5px 10px;
+	font-size: 12px;
+	box-sizing: border-box!important;
+	border-radius: 0px!important;
+	background: none;
+}
+.input-group .form-control {
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+}
+.head2_search .searchbar .input-group-btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.searchbar .input-group-btn {
+	display: block;
+	width: 80px;
+	height: 36px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	box-sizing: border-box!important;
+}
+.input-group-btn {
+	position: relative;
+	font-size: 0;
+	white-space: nowrap;
+}
+.head2_search .searchbar .input-group-btn .btn {
+	width: 80px;
+	height: 35px;
+	margin-left: 0px;
+	padding: 0px;
+	border: 0px;
+	border-radius: 0px;
+	/* background: #25b2fe; */
+	background: none;
+	text-align: center;
+	font: bold 16px/36px "microsoft yahei";
+	color: #fff;
+}
+#menu{
+width: 40px;
+height: 280px;
+position: fixed;
+top: 200px;
+left: 50%;
+margin-left: -660px;
+z-index: 999;
+display: none;
+}
+#menu ul li {
+	width: 28px;
+	height: 39px;
+	padding: 0 2px;
+	color: #333333;
+	text-align: center;
+	line-height: 39px;
+	border-bottom: 1px dotted #c2c2c2;
+	background: #ffffff;
+	position: relative;
+	box-sizing: content-box!important;
+
+
+}
+#menu ul li span {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #00B0F9;
+	color: #fff;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	line-height: 100%;
+	text-align: center;
+
+}
+
+#menu ul li.back {
+	border: 0px;
+}
+#menu ul li span.active {
+	color: #ffffff;
+	background: #00b0f9;
+}
+#menu .active span{
+	opacity: 1;
+}
+#menu span:hover{
+	opacity: 1;
+}
+
+
+/*a:link, a:visited {*/
+	/*text-decoration: none;*/
+	/*transition: all 0.2s ease;*/
+	/*cursor: pointer;*/
+	/*color: #666;*/
+/*}*/
+#menu ul li.back span {
+	opacity: 1;
+	width: 28px;
+	height: 30px;
+	padding: 15px 2px 9px;
+	font: 12px/15px "microsoft yahei";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0px;
+	bottom: 0px;
+	color: #ffffff;
+	background: #918888 url(../img/slidedown4.png) no-repeat center 7px;
+	box-sizing: content-box!important;
+}
 .toubu{
 	width: 100%;
 	height: 30px;
