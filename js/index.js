@@ -155,3 +155,79 @@
         }
     });
 }
+
+// 无缝轮播
+{
+    let num=0;
+    let innerObj=document.querySelector(".yh-box");
+    let l=document.querySelectorAll(".yh22");
+    let st=setInterval(function () {
+        num++;
+        if(num===1){
+            innerObj.style.transition="all 1s";
+        }
+        if(num==l.length){
+            num=0;
+            innerObj.style.transition="none";
+        }
+
+        innerObj.style.marginLeft=-[num]*241+"px";
+    },3000);
+    innerObj.addEventListener("transitionend",function () {
+        if(num===l.length-4){
+             innerObj.style.transition="none";
+            innerObj.style.marginLeft=0;
+            num=0;
+        }
+    })
+}
+
+//咪咕视频轮播
+{
+    let mgbanner=document.querySelectorAll(".rg-bd ul li");
+    let mgBtn=document.querySelectorAll(".jd2");
+    let mgBigbox=document.querySelector(".rg1");
+    mgBtn.forEach(function(ele,index){
+        ele.onmouseover=function(){
+            for(let i=0;i<mgBtn.length;i++){
+                mgBtn[i].classList.remove("active");
+                mgbanner[i].classList.remove("active");
+            }
+            this.classList.add("active");
+            mgbanner[index].classList.add("active");
+            n=index;
+        }
+    });
+    let n=0;
+    let st=setInterval(function(ele,index){
+        n++;
+        if(n==mgBtn.length){
+            n=0;
+        }
+        for(let i=0;i<mgBtn.length;i++){
+            mgBtn[i].classList.remove("active");
+            mgbanner[i].classList.remove("active");
+        }
+        mgBtn[n].classList.add("active");
+        mgbanner[n].classList.add("active");
+    },5000)
+    mgBigbox.onmouseover=function () {
+        clearInterval(st);
+    }
+    mgBigbox.onmouseout=function () {
+        setInterval(function(ele,index){
+            n++;
+            if(n==mgBtn.length){
+                n=0;
+            }
+            for(let i=0;i<mgBtn.length;i++){
+                mgBtn[i].classList.remove("active");
+                mgbanner[i].classList.remove("active");
+            }
+            mgBtn[n].classList.add("active");
+            mgbanner[n].classList.add("active");
+        },5000)
+    }
+}
+
+

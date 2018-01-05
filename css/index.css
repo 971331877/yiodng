@@ -667,6 +667,11 @@ display: none;
 	background: #fff;
 	float: right;
 	position: relative;
+	overflow: hidden;
+}
+.yh-box{
+	width: 3000px;
+	height: 170px;
 }
 .yh22{
 	width: 234px;
@@ -677,7 +682,7 @@ display: none;
 	position: relative;
 }
 .yh222{
-	margin: 0;
+	/*margin: 0;*/
 }
 .yh224{
 	font-size: 17px;
@@ -1136,12 +1141,27 @@ width: 475px;
     position: absolute;
     bottom: 10px;
     left: 50%;
-    z-index: 2;
+    z-index: 999;
 }
 .jd1{
 	padding: 0px;
     margin: 0;
     font-size: 12px;
+}
+.rg-bd li{
+    position: absolute;
+    width: 710px;
+    left: 0px;
+    top: 0px;
+}
+.rg-bd ul{
+    position: relative;
+    width: 710px;
+    height: 210px
+}
+.rg-bd .active{
+    z-index: 2;
+    opacity: 1
 }
 .jd2{
 
@@ -1154,6 +1174,10 @@ width: 475px;
     border-radius: 5px;
     background: #5d5d5c;
     cursor: pointer;
+    z-index: 999;
+}
+.jd2.active{
+    background: #e40078;!important;
 }
 .rgbt{
 	width: 722px;
