@@ -158,28 +158,88 @@
 
 // 无缝轮播
 {
-    let num=0;
-    let innerObj=document.querySelector(".yh-box");
-    let l=document.querySelectorAll(".yh22");
-    let st=setInterval(function () {
-        num++;
-        if(num===1){
-            innerObj.style.transition="all 1s";
-        }
-        if(num==l.length){
-            num=0;
-            innerObj.style.transition="none";
-        }
+    // let num=0;
+    // let innerObj=document.querySelector(".yh-box");
+    // let l=document.querySelectorAll(".yh22");
+    // let st=setInterval(function () {
+    //     num++;
+    //     if(num===1){
+    //         innerObj.style.transition="all 1s";
+    //     }
+    //     if(num==l.length){
+    //         num=0;
+    //         innerObj.style.transition="none";
+    //     }
+    //
+    //     innerObj.style.marginLeft=-[num]*241+"px";
+    // },3000);
+    // innerObj.addEventListener("transitionend",function () {
+    //     if(num===l.length-4){
+    //          innerObj.style.transition="none";
+    //         innerObj.style.marginLeft=0;
+    //         num=0;
+    //     }
+    // })
 
-        innerObj.style.marginLeft=-[num]*241+"px";
-    },3000);
-    innerObj.addEventListener("transitionend",function () {
-        if(num===l.length-4){
-             innerObj.style.transition="none";
-            innerObj.style.marginLeft=0;
-            num=0;
+    let innerobj=document.querySelector(".yh-box");
+    let box=document.querySelector(".yh2");
+    let nextobj=document.querySelector(".anniu-right");
+    let prveobj=document.querySelector(".anniu-left");
+    let st=setInterval(moveFn,2000);
+    let n=4;
+    let dir="right"
+    function moveFn () {
+        innerobj.style.transition="all 1s";
+        if (dir==="right"){
+            n++;
+        }else {
+            n--;
         }
-    })
+        innerobj.style.marginLeft=-n*241+"px"
+    }
+    innerobj.addEventListener("transitionend",function () {
+        flag=true;
+        if(n===11){
+            innerobj.style.transition="none";
+            innerobj.style.marginLeft="-964px";
+            n=4;
+
+        }
+        if(n===0){
+            innerobj.style.transition="none";
+            innerobj.style.marginLeft="-1687px";
+            n=7;
+        }
+    });
+    box.onmouseover=function () {
+        clearInterval(st);
+    };
+    box.onmouseout=function () {
+        st=setInterval(moveFn,2000)
+    };
+    window.onfocus=function () {
+        st=setInterval(moveFn,2000);
+    };
+    window.onblur=function () {
+        clearInterval(st);
+    };
+    let flag=true;
+    nextobj.onclick=function () {
+        if(flag){
+            dir="right"
+            flag=false;
+            moveFn();
+        }
+    }
+    //zuo
+    prveobj.onclick=function () {
+        if(flag){
+            dir="left"
+            flag=false;
+            moveFn();
+        }
+    }
+
 }
 
 //咪咕视频轮播
@@ -230,4 +290,80 @@
     }
 }
 
+// ewm
+{
+    let tabz2=document.querySelector(".tbz2-zz");
+    let tabewm=document.querySelector(".tz-ewm");
+    tabz2.onmouseover=function () {
+        tabewm.style.display="block";
+};
+    tabz2.onmouseout=function(){
+        tabewm.style.display="none"
+    }
+}
+
+// ce
+{
+
+
+        let  ce=document.querySelectorAll(".banner .bannerz li");
+        let  nav=document.querySelectorAll(".nav");
+        let banner=document.querySelector(".bannera")
+       console.log(ce)
+        ce.forEach(function (ele,index) {
+            ele.onmouseover=function(){
+                nav.forEach(function(ele){
+                    ele.style.display="none";
+                })
+                nav[index].style.display="block";
+                // ce[index].style.borderColor="#3eb4fa";
+                ce[index].classList.add("cur");
+                // ce[index].style.borderRight="#fff";
+            }
+            nav[index].onmouseout=function(){
+                nav[index].style.display="none";
+                ce[index].classList.remove("cur");
+            }
+            nav[index].onmouseover=function(){
+                ce[index].classList.add("cur");
+                nav[index].style.display="block";
+            }
+            ce[index].onmouseout=function(){
+                ce[index].classList.remove("cur");
+                nav[index].style.display="none";
+
+                // ce[index].style.borderColor="#fff";
+            }
+        })
+    }
+    //kf
+{
+    let  ce=document.querySelectorAll(".kf li a.kf1");
+    let  nav=document.querySelectorAll(".wz");
+    console.log(ce);
+    ce.forEach(function (ele,index) {
+        ele.onmouseover=function(){
+            nav.forEach(function(ele){
+                ele.style.display="none";
+            })
+            nav[index].style.display="block";
+
+            ce[index].classList.add("ass");
+
+        }
+        // nav[index].onmouseout=function(){
+        //     nav[index].style.display="none";
+        //     ce[index].classList.remove("ass");
+        // }
+        // nav[index].onmouseover=function(){
+        //     ce[index].classList.add("ass");
+        //     nav[index].style.display="block";
+        // }
+        ce[index].onmouseout=function(){
+            ce[index].classList.remove("ass");
+            nav[index].style.display="none";
+
+        }
+    })
+}
 

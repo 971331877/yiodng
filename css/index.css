@@ -237,6 +237,7 @@ display: none;
 	height: 100%;
 	background: #f5f5f5f5;
 	margin: 0 auto;
+	/*position: relative;*/
 }
 .tbz{
 	font-size: 12px;
@@ -257,6 +258,59 @@ display: none;
 	line-height: 30px;
 	float: right;
 	margin-right:33px;
+	display: block;
+
+	position: relative;
+}
+.tbz2-zz{
+	width: 135px;
+	height: 29px;
+	float: right;
+	border-left: 1px solid #F5F5F5;
+	border-right: 1px solid #F5F5F5;
+	border-top: 1px solid #F5F5F5;
+	/*margin-right: 33px;*/
+}
+.tbz2-zz:hover{
+	background: #fff;
+	border-top: 1px solid #dfddde;
+	border-left: 1px solid #dfddde;
+	border-right: 1px solid #dfddde;
+}
+.tbz2-zg{
+	margin-right: 20px;
+}
+.tz-ewm{
+	display: none;
+	width: 160px;
+	height: 160px;
+	border-bottom: 1px solid #dfddde;
+	border-left: 1px solid #dfddde;
+	border-right: 1px solid #dfddde;
+	background: #ffffff;
+	position: absolute;
+	right:449px;
+	top: 29px;
+	z-index: 111;
+}
+.tz-ewm img{
+margin: 20px auto 0;
+	display: block;
+}
+.tz-ewm p{
+	font: 14px/30px "microsoft yahei";
+	color: #333;
+	text-align: center;
+}
+.tbz2-tb{
+	width: 120px;
+	height: 19px;
+	background: url("../img/phone.png") no-repeat center center;
+	z-index: 111;
+	position: absolute;
+	top: 6px;
+	left: -20px;
+
 }
 .tb1 a:nth-of-type(2){
 	margin-right: 0;
@@ -395,25 +449,55 @@ display: none;
 	border-bottom: 1px solid #DF6818;
 	position: relative;
 	border-top: 1px solid #3EB4FA;
+	position: relative;
+}
+.nav{
+	display: none;
+	width: 963px;
+height: 416px;
+
+	border: 1px solid #3eb4fa;
+	background: #ffffff;
+	/*z-index: 2;*/
+	position: absolute;
+	left: 235px;
+	top: -1px;
+	z-index: 1000;
 }
 .bannerz{
 	width: 235px;
 	height: 398px;
 	float: left;
 	background: #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 9999;
+
 }
+.cur{
+	width: 233px;
+	height: 52px;
+	border: 1px solid #00b0f9!important;
+	border-right:2px solid #ffffff!important;
+	z-index: 9999;
+	/*display: none;*/
+}
+
 .bannerz li{
-	width: 200px;
-	height: 50px;
-	padding-left: 30px;
+	width: 233px;
+	height: 52px;
+	/*box-sizing: border-box;*/
+	border:1px solid #ffffff;
 }
 .bannerz li a{
-	width: 100%;
+	width: 200px;
 	height: 100%;
 	display: block;
 	font-size: 16px;
 	color: #333;
 	line-height: 50px;
+	padding-left: 30px;
 }
 .bannerz li:hover a{
 	color: #3EB4FA;
@@ -436,7 +520,7 @@ display: none;
 	width: 705px;
 	height: 398px;
 	position: relative;
-	float: left;
+	float: right;
 
 }
 .bannerv .active{
@@ -468,7 +552,7 @@ display: none;
 .bannery{
 	width: 260px;
 	height: 398px;
-	float: left;
+	float: right;
 	background: #fff;
 }
 .bnvz{
@@ -670,8 +754,9 @@ display: none;
 	overflow: hidden;
 }
 .yh-box{
-	width: 3000px;
+	width: 30000px;
 	height: 170px;
+	margin-left: -964px;
 }
 .yh22{
 	width: 234px;
@@ -1130,6 +1215,7 @@ width: 475px;
     overflow: hidden;
     position: relative;
     border: 0px;
+
 }
 .jd{
 	float: left;
@@ -1153,15 +1239,18 @@ width: 475px;
     width: 710px;
     left: 0px;
     top: 0px;
+	transition:1s;
 }
 .rg-bd ul{
     position: relative;
     width: 710px;
-    height: 210px
+    height: 210px;
+
 }
 .rg-bd .active{
     z-index: 2;
-    opacity: 1
+    opacity: 1;
+
 }
 .jd2{
 
@@ -1490,6 +1579,79 @@ width: 475px;
 	color:  #3EB4FA;
 	text-decoration:underline;
 }
+.huang{
+	width: 40px;
+	height: 118px;
+	/*background: red;*/
+	position: absolute;
+	right: 0;
+	top:3890px;
+	z-index: 999;
+}
+.kf{
+	width: 100px;
+	height: 117px;
+	/*background: red;*/
+	position: absolute;
+	right: 0;
+	top: 4020px;
+}
+.kf li{
+	width: 100px;
+	height: 38px;
+	margin-bottom: 1px;
+	overflow: hidden;
+}
+.kf li a.kf1{
+	display: block;
+	float: right;
+	width: 40px;
+	height: 38px;
+	transition: 0s;
+	background: #918888 url(../img/kf1.png) no-repeat center center;
+}
+
+.kf li a.wz{
+	display: none;
+	width: 60px;
+	height: 38px;
+	text-align: center;
+	font: bold 12px/38px "microsoft yahei";
+	color: #ffffff;
+	background: #3EB4FA;
+	overflow: hidden;
+}
+.ass{
+	background: #3EB4FA url(../img/kf1.png) no-repeat center center !important;
+}
+
+.nav li{
+	width:auto;
+	height:30px;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.nav  li span{
+	font-weight: bold;
+	color:#333;
+	font-size: 14px;
+}
+.nav  li a{
+	color:#333;
+	padding:0 10px;
+	border-right:1px solid #999;
+	font-size: 14px;
+
+}
+.nav  li a:hover{
+	color: #e30077;
+}
+.nav  li .more{
+	color:#3eb4fa;
+
+}
+
 
 
 
